@@ -1,0 +1,281 @@
+@import'../../node_modules/normalize.css/normalize';
+
+@import '../../shared/scss/base';
+
+@import '../../shared/fontawesome/scss/fontawesome';
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:ital,wght@1,300&display=swap');
+
+* {
+    font-family: 'Dancing Script', cursive;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    background-color: blanchedalmond;
+    font-size: 16px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+     
+}
+
+body {
+    font-family: 'Rokkitt', serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-variant-ligatures: common-ligatures;
+    text-rendering: optimizeLegibility;
+    font-kerning: normal;
+    color: black;
+}
+
+.header, .footer {
+    flex: 0 0 auto;
+}
+
+.flash-img {
+    height: 100%;
+}
+
+
+.title, .logo {
+    float: left;
+    padding: 3em 3em 3em 0;
+}
+
+.title * {
+    margin: 0;
+    color: black;
+}
+
+.title p {
+    font-style: italic;
+}
+
+/* Header */
+
+.site-header {
+    flex: 0 0 auto;
+    background-color: bisque;
+    color: #2b2e30;
+    padding: 0 2em;
+}
+
+.site-header a, .site-header a:visited {
+    color: #2b2e30;
+}
+
+/* Main */
+
+.main {
+    flex: 1 0 auto;
+    padding: 2em;
+}
+
+/* Footer */
+
+.site-footer {
+    flex: 0 0 auto;
+    background: bisque;
+    color: #2b2e30;
+    padding: 2em;
+}
+
+.site-footer a {
+    color: #747272;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0 none;
+}
+
+.slide {
+    overflow-y: hidden !important;
+    -webkit-transition: height 0.5s ease-in !important;
+    transition: height 0.5s ease-in !important;
+}
+
+#nav {
+    padding: 3em 0;
+    text-align: right;
+    color: black;
+}
+
+#nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+#nav ul li {
+    display: inline-block;
+    margin-left: 1em;
+    padding: 0;
+    font-weight: bold;
+    color: black;
+}
+
+#nav a:hover, #nav-toggle:hover {
+    text-decoration: underline;
+    color: darkgoldenrod;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.logo {
+    height: 10.8em;
+    display: block;
+    height: 50%;
+  }
+
+  .logo img {
+    min-width: 4.8em;
+}
+
+.logo+.title h1 {
+    margin: 0.8rem 0;
+}
+
+.logo+.title.tagline h1 {
+    margin: 0;
+}
+
+.flash-img {
+    width: 100%;
+}
+
+.footer {
+    background: rgb(243, 216, 182);
+    color: #555454;
+}
+
+.footer a {
+    color: rgb(141, 131, 131);
+}
+
+.footer a:hover {
+    color: rgb(141, 131, 131);
+}
+
+.footer p {
+    margin: 0;
+    padding: 2em 0;
+}
+
+.footer .social {
+    display: inline-block;
+    width:200px;
+    padding: 0em 0 0em 1em;
+    font-size: 1rem;
+}
+
+
+.footer.copyright 
+{ 
+    overflow: hidden; 
+    padding: 0em 0 0em 1em;
+    text-align: center; 
+    font-size: 2rem; 
+} 
+      
+.copyright p 
+{ 
+    letter-spacing: 1px; 
+    font-size: 1em; 
+    color: rgba(99, 96, 96, 0.6); 
+}
+
+.js .nav-toggle {
+    display: block;
+    float: right;
+    width: 2em;
+    margin: 0.6667em 0;
+    font-size: 1.5rem;
+    line-height: 2em;
+    text-align: center;
+    cursor: pointer;
+}
+.js .nav-toggle>* {
+    vertical-align: middle;
+}
+.footer p {
+    padding: 1em 0;
+}
+.footer .social {
+    padding: 0.5em 0 0.5em 1em;
+}
+
+
+
+/* Small devices */
+
+@media (max-width: 767px) {
+    #nav {
+        clear: both;
+        padding: 0;
+    }
+    #nav ul {
+        padding-bottom: 1em;
+    }
+    #nav ul li {
+        display: block;
+        margin-left: 0;
+        text-align: center;
+    }
+    #nav ul li a {
+        display: block;
+        padding: 0.5em 0;
+    }
+    .js #nav-toggle {
+        display: block;
+        float: right;
+        width: 2em;
+        margin: 0.6667em 0;
+        font-size: 1.5rem;
+        line-height: 2em;
+        text-align: center;
+        cursor: pointer;
+    }
+    .js #nav-toggle>* {
+        vertical-align: middle;
+    }
+}
+
